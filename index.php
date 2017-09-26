@@ -21,29 +21,26 @@
     <div id="page">
 
     <div id="header">
-        <h1>Product Manager</h1>
+        <h1>Customer list</h1>
     </div>
 
     <div id="main">
 
         <h1>Product List</h1>
 
-       
+       1
 
         <div id="content">
             <!-- display a table of products -->
             <table>
                 <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Full Name</th>
+                    <th>Semester</th>
 
                 </tr>
-                <?php foreach ($customers as $customer) : ?>
+                <?php foreach ($customers as $semesterName) : ?>
                 <tr>
-                    <td><?php echo $customer['firstName']; ?></td>
-                    <td><?php echo $customer['lastName']; ?></td>
-                    
+                    <td><?php echo $customers['semesterName']; ?></td>
+
                     
                 </tr>
                 <?php endforeach; ?>
@@ -52,7 +49,7 @@
     </div>
 
     <div id="footer">
-        <p>&copy; <?php echo date("Y"); ?> My Guitar Shop, Inc.</p>
+        <p>&copy; <?php echo date("Y"); ?> Assignment 1, Inc.</p>
     </div>
 
     </div><!-- end page -->
