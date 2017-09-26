@@ -2,6 +2,8 @@
     $dsn = 'mysql:host=localhost;dbname=shopDB';
     $username = 'mgs_user';
     $password = 'pa55word';
+    $servername= "localhost";
+    $dbname='shopDB';
 
     try {
         $db = new PDO($dsn, $username, $password);
